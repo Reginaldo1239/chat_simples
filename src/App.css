@@ -1,11 +1,88 @@
 
-
+*{
+  padding: 0;
+  margin: 0;
+  resize: none;
+  outline: none;
+}
 .flex{
   display: flex;
 }
 .center{
   margin: 0 auto;
+  max-width: 1000px;
 }
 .home{
+width: 100%;
+}
+form{
+  width: 100%;
+}
+.chat form .talks.flex{
+  flex-direction:column-reverse;
+} 
+.chat form .talks{
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  max-height: 200px;
+  height: 100vh;
+  width: 100%;
+  overflow-y:scroll;
+  overflow-x: hidden;
+ 
+
+}
+.single_msg{
+
+
+
+
+
+  border-radius: 5px;
+
+}
+.single_msg span{
+  margin: 3px 0;
+  background-color: yellowgreen;
+ padding: 1px 10px;
+ border-radius: 5px; 
+ color:white;
+  word-break: break-all;
+ display: inline-block;
+} 
+.chat form{
+  width: 50%;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.chat .form_group{
+  width: 100%;
+  margin: 10px 0;
+}
+
+ textarea{
+  width: 100%;
+  min-height: 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 19px;
+  padding: 2px;
+}
+button{
+  padding: 5px 10px ;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border:1px solid #ccc;
+}
+
+button:active{
+  border-color: black;
 
 }
